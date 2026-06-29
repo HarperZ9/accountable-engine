@@ -60,3 +60,11 @@ operator-facing critic. The git history is the timestamped provenance record.
 ## License
 
 [MIT](LICENSE)
+
+## For developers
+
+Keep the public README, examples, and repository metadata aligned with current behavior. Before opening a PR or publishing a release, verify the working tree and any documented commands for this repo.
+
+```bash
+git status --short
+```
