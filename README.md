@@ -4,9 +4,9 @@
 
 > Keep human and agent work tied to evidence instead of mood, memory, or confidence.
 
-Accountable Engine is a small coordination framework for agentic engineering
-work. It gives a repo a claim ledger, a decision log, and a state-aware critic so
-people and agents can say what they intend to do, attach a receipt, and leave a
+Accountable Engine is a small coordination framework for AI-assisted engineering
+work. It gives a repository a claim ledger, a decision log, and a state-aware
+critic so people and agents can name the work, attach evidence, and leave a
 reviewable trail.
 
 ## Why it matters
@@ -20,8 +20,8 @@ decisions so a maintainer can resume work without inheriting hidden confidence.
 ```powershell
 git clone https://github.com/HarperZ9/accountable-engine.git
 cd accountable-engine
-pwsh -File .\critic.ps1
-pwsh -File .\critic.ps1 -Record
+powershell -NoProfile -ExecutionPolicy Bypass -File .\critic.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\critic.ps1 -For VERIFY -Record "Run tests before claiming done."
 ```
 
 ## What to test first
@@ -32,13 +32,16 @@ pwsh -File .\critic.ps1 -Record
 
 ## Current status
 
-Reference framework plus working PowerShell tooling. The public repo is useful as
-a lightweight accountability pattern; portable CLI packaging is future work.
+Reference framework plus working PowerShell tooling. The public repo is useful
+today as a lightweight accountability pattern; portable CLI packaging is future
+work.
 
 ## Developer surface
 
 - `STATE.template.md` - coordination protocol and claim ledger shape.
 - `critic.ps1` - local reviewer that reads current state and records decisions.
+- `USAGE.md` - install, run, record, and boundary guide.
+- `.github/workflows/ci.yml` - CI command for the critic.
 - `LICENSE` - public release terms.
 
 ## What it does
@@ -61,10 +64,13 @@ operator-facing critic. The git history is the timestamped provenance record.
 
 [MIT](LICENSE)
 
-## For developers
+## For Developers
 
-Keep the public README, examples, and repository metadata aligned with current behavior. Before opening a PR or publishing a release, verify the working tree and any documented commands for this repo.
+Keep the public README, examples, and repository metadata aligned with current
+behavior. Before opening a PR or publishing a release, verify the working tree
+and the documented command:
 
-```bash
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\critic.ps1
 git status --short
 ```
