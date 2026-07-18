@@ -1,3 +1,5 @@
+<p align="center"><img src=".github/assets/zentropy-banner.png" alt="accountable-engine" width="100%"></p>
+
 # Accountable Engine
 
 ![Accountable Engine hero](docs/brand/accountable-engine-hero.png)
@@ -74,3 +76,7 @@ and the documented command:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\critic.ps1
 git status --short
 ```
+
+---
+
+**[Zentropy Labs](https://github.com/ZentropyLabs-ai)** · order out of entropy. An independent lab building evidence-first tools that leave a re-checkable artifact behind. Built by Zain Dana Harper in Seattle. The full workbench is at [Project Telos](https://harperz9.github.io).
