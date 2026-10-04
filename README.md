@@ -1,10 +1,19 @@
-<p align="center"><img src=".github/assets/banner.png" alt="accountable-engine" width="100%"></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HarperZ9/accountable-engine/main/docs/art/hero-dark.svg">
+  <img src="https://raw.githubusercontent.com/HarperZ9/accountable-engine/main/docs/art/hero-light.svg" alt="accountable-engine: Tie human and agent work to claims, receipts, and decision logs. A chain of small linked squares, each holding a few ruled lines, winds inward to a bright core." width="100%">
+</picture>
 
-# Accountable Engine
+# accountable-engine
 
-![Accountable Engine hero](docs/brand/accountable-engine-hero.png)
+Tie human and agent work to claims, receipts, and decision logs.
 
-> Keep human and agent work tied to evidence instead of mood, memory, or confidence.
+```
+git clone https://github.com/HarperZ9/accountable-engine.git
+```
+
+[![CI](https://github.com/HarperZ9/accountable-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/HarperZ9/accountable-engine/actions/workflows/ci.yml)
+[![license](https://img.shields.io/badge/license-MIT-e6e1d6?style=flat-square&labelColor=1a1712)](https://github.com/HarperZ9/accountable-engine/blob/main/LICENSE)
+![PowerShell](https://img.shields.io/badge/language-PowerShell-e6e1d6?style=flat-square&labelColor=1a1712)
 
 Accountable Engine is a small coordination framework for AI-assisted engineering
 work. It gives a repository a claim ledger, a decision log, and a state-aware
