@@ -1,3 +1,5 @@
+> **Archived.** This tool moved to [HarperZ9/flywheel](https://github.com/HarperZ9/flywheel) on 2026-11-15 and now lives at [`packages/accountable-engine`](https://github.com/HarperZ9/flywheel/tree/main/packages/accountable-engine). This repository is read-only and is kept for its history, branches and releases.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HarperZ9/accountable-engine/main/docs/art/hero-dark.svg">
   <img src="https://raw.githubusercontent.com/HarperZ9/accountable-engine/main/docs/art/hero-light.svg" alt="accountable-engine: Tie human and agent work to claims, receipts, and decision logs. A chain of small linked squares, each holding a few ruled lines, winds inward to a bright core." width="100%">
